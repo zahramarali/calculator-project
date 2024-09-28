@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/199e009485.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body class="theme1">
+    <div class="grid-container">
+      <div class="topBar">
+        <p class="calcText">Calculator</p>
+
+        <div class="icons">
+          <i class="fa-solid fa-minus hoverI"></i>
+          <i class="fa-solid fa-window-restore hoverI"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="res">
+        <div class="iconsRes">
+          <div class="leftSide">
+            <i class="fa-solid fa-bars"></i>
+            <p class="leftSide--text">Standard</p>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </div>
+          <div class="rigthSide">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+        </div>
+        <div class="input">
+          <div class="output-top"></div>
+          <input name="calc" class="output-down" id="calculator" value="0" />
+        </div>
+        <div class="Mpart">
+          <button disabled class="btn">MC</button>
+          <button disabled class="btn">MR</button>
+          <button class="btn btn1">M+</button>
+          <button class="btn btn1">M-</button>
+          <button class="btn btn1">MS</button>
+          <button disabled class="btn responM">
+            <span>M</span>
+            <sup> <i class="fa-solid fa-chevron-down"></i> </sup>
+          </button>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="button Btn1" data-operation="percentage">&#37;</button>
+        <button class="button Btn1" data-operation="sqrt">&radic;</button>
+        <button data-operation="square" class="button Btn1">x²</button>
+        <button data-operation="reciprocal" class="button Btn1">¹/𝓍</button>
+
+        <button class="button IconsBtn nonShow" data-operation="percentage">
+          &#37;</button
+        ><button id="clear-last-action" class="button IconsBtn">CE</button
+        ><button id="clear" class="button IconsBtn" value="">C</button
+        ><button id="back-space" class="button IconsBtn">
+          <i class="fa-solid fa-delete-left"></i>
+        </button>
+        <button value="÷" id="divide" class="operator divide button IconsBtn">
+          &#247;</button
+        ><button class="button IconsBtn nonShow" data-operation="sqrt">
+          &radic;
+        </button>
+        <button value="7" class="button num">7</button>
+        <button value="8" class="button num">8</button>
+        <button value="9" class="button num">9</button
+        ><button
+          value="×"
+          id="multiple"
+          class="operator multiple button IconsBtn"
+        >
+          &#215;</button
+        ><button data-operation="square" class="button IconsBtn nonShow">
+          𝓍²
+        </button>
+        <button value="4" class="button num">4</button>
+        <button value="5" class="button num">5</button>
+        <button value="6" class="button num">6</button>
+        <button value="-" id="minus" class="operator minus button IconsBtn">
+          &#8722;</button
+        ><button data-operation="cube" class="button IconsBtn nonShow">
+          𝓍&sup3
+        </button>
+
+        <button value="1" class="button num">1</button>
+        <button value="2" class="button num">2</button>
+        <button value="3" class="button num">3</button>
+        <button value="+" id="plus" class="operator plus button IconsBtn">
+          &#43;
+        </button>
+        <button data-operation="reciprocal" class="button IconsBtn nonShow">
+          ¹/𝓍
+        </button>
+        <button id="positive-negative" class="button IconsBtn">
+          <span>
+            <sup>+</sup>
+          </span>
+          <span>&frasl;</span>
+          <span class="x-sign">
+            <sub><em>&#8722;</em></sub>
+          </span>
+        </button>
+        <button value="0" class="button num">0</button>
+        <button id="point" class="button IconsBtn">&#8729;</button>
+        <button value="" id="equal" class="equal button IconsBtn">=</button>
+      </div>
+
+      <!--------------------------- sideBar part -->
+      <div class="sideBar">
+        <ul class="items">
+          <li class="item item1">History</li>
+          <li class="item">Memory</li>
+        </ul>
+        <p class="text-side">there is no history yet</p>
+        <div class="trashCan">
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
